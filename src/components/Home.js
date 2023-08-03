@@ -11,7 +11,7 @@ const Home = () => {
       name="home"
       className="relative w-full h-screen items-center flex justify-center bg-[#0a192f] overflow-hidden"
     >
-      <img src={Img} className="home-img" />
+      <img src={Img} alt="" className="home-img" />
       {/* Container */}
       <div className="max-w-[1000px] mx-auto px-8 absolute top-0 flex flex-col justify-center h-full">
         <p className="text-pink-600">Hi, my name is</p>
