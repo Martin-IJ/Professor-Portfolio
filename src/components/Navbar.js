@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className="fixed w-full h-[80px] z-10 flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <div>
         <Link to="/">
-          <h1 className="text-2xl uppercase font-bold">
+          <h1 className="text-3xl uppercase font-bold">
             <span className="text-[#A03F73] underline">Wisdom</span> Okafor
           </h1>
         </Link>
@@ -36,7 +36,7 @@ const Navbar = () => {
       </ul>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10">
+      <div onClick={handleClick} className="text-3xl md:hidden z-10">
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 

@@ -1,5 +1,7 @@
 import React from "react";
 import { data } from "../data/data.js";
+import { HiArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const Work = () => {
   // projects file
@@ -7,8 +9,8 @@ const Work = () => {
   //setProject(data);
 
   return (
-    <div name="work" className="w-full pt-20 md:pt-10 md:h-screen text-gray-300 bg-[#0a192f]">
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+    <div name="work" className="w-full pt-36 md:pt-10 md:h-screen text-gray-300 bg-[#0a192f]">
+      <div className="max-w-[1000px] mx-auto p-4 flex flex-col text-center sm:text-left justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
             Work
@@ -54,6 +56,16 @@ const Work = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div>
+          <Link to="/contact">
+            <button className="text-white group px-6 py-3 my-2 flex items-center ease-in duration-300">
+              Contact Me
+              <span className="duration-300">
+                <HiArrowNarrowRight className="ml-3 " />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

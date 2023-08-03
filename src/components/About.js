@@ -1,11 +1,13 @@
 import React from "react";
-import img from '../assets/20230709_155431.jpg'
+import img from "../assets/20230709_155431.jpg";
+import { HiArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
     <div
       name="about"
-      className="relative w-full pt-32 h-screen bg-[#0a192f] text-gray-300"
+      className=" w-full pt-32 h-screen bg-[#0a192f] text-gray-300"
     >
       <img src={img} alt="" className="about-img" />
       <div className="flex flex-col justify-center px-5 md:px-0 items-center w-full">
@@ -16,8 +18,8 @@ const About = () => {
           <div className="sm:text-right pb-8 pl-4"></div>
           <div></div>
         </div>
-        <div className="max-w-[1010px] pb-16 w-full grid sm:grid-cols-2 gap-8 px-4">
-          <div className="sm:text-right text-4xl font-bold">
+        <div className="max-w-[1010px] pb-16 w-full text-center sm:text-left grid sm:grid-cols-2 gap-8 px-4">
+          <div className="text-center sm:text-right text-4xl font-bold">
             <p>
               Hi. I'm Wisdom Okafor, nice to meet you. Please take a look
               around.
@@ -134,6 +136,16 @@ const About = () => {
               </p>
             </li>
           </ul>
+          <div>
+            <Link to="/about">
+              <button className="text-white z-20 px-6 py-3 my-2 flex items-center ease-in duration-300">
+                View More About Me
+                <span className="duration-300">
+                  <HiArrowNarrowRight className="ml-3 " />
+                </span>
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

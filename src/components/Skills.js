@@ -7,12 +7,14 @@ import Node from '../assets/node.png';
 import GitHub from '../assets/github.png';
 import Tailwind from '../assets/tailwind.png';
 import Bootstrap from '../assets/Bootstrap_logo.svg.png'
+import { HiArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const Skills = () => {
   return (
     <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
       {/* Container */}
-      <div className='max-w-[1000px] mx-auto p-4 py-20 flex flex-col justify-center w-full'>
+      <div className='max-w-[1000px] mx-auto p-4 pt-36 text-center sm:text-left flex flex-col justify-center w-full'>
           <div>
               <p className='text-4xl font-bold inline border-b-4 border-pink-600 '>Skills</p>
               <p className='py-4'>These are the technologies I've worked with</p>
@@ -52,6 +54,16 @@ const Skills = () => {
                   <p className='my-4'>TAILWIND</p>
               </div>
           </div>
+          <div>
+          <Link to="/work">
+            <button className="text-white group px-6 py-3 my-2 flex items-center ease-in duration-300">
+              Lets continue to projects
+              <span className="duration-300">
+                <HiArrowNarrowRight className="ml-3 " />
+              </span>
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );
