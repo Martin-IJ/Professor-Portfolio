@@ -2,7 +2,6 @@ import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
-import { GlitchText } from "glitch-text";
 import Img from "../assets/20230731_105238.jpg";
 
 const Home = () => {
