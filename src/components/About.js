@@ -7,7 +7,7 @@ const About = () => {
       name="about"
       className="relative w-full pt-32 h-screen bg-[#0a192f] text-gray-300"
     >
-      <img src={img} alt="backfround image" className="about-img" />
+      <img src={img} className="about-img" />
       <div className="flex flex-col justify-center px-5 md:px-0 items-center w-full">
         <p className="text-4xl font-bold inline border-b-4 border-pink-600">
           About Me

@@ -10,7 +10,6 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px] z-10 flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <div>
-        {/* <img src={Logo} alt='Logo Image' style={{ width: '200px' }} /> */}
         <Link to="/">
           <h1 className="text-2xl uppercase font-bold">
             <span className="text-[#A03F73] underline">Wisdom</span> Okafor

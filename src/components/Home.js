@@ -3,12 +3,15 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 import { GlitchText } from "glitch-text";
-import Img from '../assets/20230731_105238.jpg'
+import Img from "../assets/20230731_105238.jpg";
 
 const Home = () => {
   return (
-    <div name="home" className="relative w-full h-screen items-center flex justify-center bg-[#0a192f] overflow-hidden">
-      <img src={Img} alt="backgroundImg" className="home-img" />
+    <div
+      name="home"
+      className="relative w-full h-screen items-center flex justify-center bg-[#0a192f] overflow-hidden"
+    >
+      <img src={Img} className="home-img" />
       {/* Container */}
       <div className="max-w-[1000px] mx-auto px-8 absolute top-0 flex flex-col justify-center h-full">
         <p className="text-pink-600">Hi, my name is</p>
