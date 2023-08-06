@@ -2,6 +2,7 @@ import React from "react";
 import { data } from "../data/data.js";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import Img from '../assets/20230630_113500.jpg'
 
 const Work = () => {
   // projects file
@@ -9,11 +10,12 @@ const Work = () => {
   //setProject(data);
 
   return (
-    <div name="work" className="w-full pt-36 md:pt-10 md:h-screen text-gray-300 bg-[#0a192f]">
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col text-center sm:text-left justify-center w-full h-full">
+    <div name="work" className="work-cont w-full pt-36 md:pt-10 md:h-screen text-gray-300">
+      <img src={Img} alt="" className="work-img" />
+      <div className="max-w-[1000px] mx-auto p-4 pt-20 flex flex-col text-center sm:text-left justify-center w-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
-            Work
+            Project
           </p>
           <p className="py-6">Check out some of my recent work</p>
         </div>

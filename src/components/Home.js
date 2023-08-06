@@ -1,7 +1,14 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa";
 import Img from "../assets/20230731_105238.jpg";
 
 const Home = () => {
@@ -41,9 +48,18 @@ const Home = () => {
         <div className="flex text-white gap-8 text-2xl pt-6">
           <FaGithub className="hover:text-pink-600" />
           <FaLinkedin className="hover:text-pink-600" />
-          <a href="https://www.twitter.com/PrOf_fessOr01" target="blank"><FaTwitter className="hover:text-pink-600" /></a>
-          <a href="https://www.facebook.com/wisdom.okafor.501/" target="blank"><FaFacebook className="hover:text-pink-600" /></a>
-          <a href="https://www.instagram.com/1professor___" target="blank"><FaInstagram className="hover:text-pink-600" /></a>
+          <a href="https://www.twitter.com/PrOf_fessOr01" title="Twitter" target="blank">
+            <FaTwitter className="hover:text-pink-600" />
+          </a>
+          <a href="https://www.facebook.com/wisdom.okafor.501/" title="Facebook" target="blank">
+            <FaFacebook className="hover:text-pink-600" />
+          </a>
+          <a href="https://www.instagram.com/1professor___" title="Instagram" target="blank">
+            <FaInstagram className="hover:text-pink-600" />
+          </a>
+          <a href="https://wa.me/2349131749054" title="WhatsApp" target="blank">
+            <FaWhatsapp className="hover:text-pink-600" />
+          </a>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/20230709_155431.jpg";
+import Img from "../assets/20230709_155431.jpg";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
@@ -7,9 +7,9 @@ const About = () => {
   return (
     <div
       name="about"
-      className=" w-full pt-32 h-screen bg-[#0a192f] text-gray-300"
+      className="relative about-cont w-full pt-32 h-screen bg-[#0a192f] text-gray-300"
     >
-      <img src={img} alt="" className="about-img" />
+      <img src={Img} alt="" className="about-img" />
       <div className="flex flex-col justify-center px-5 md:px-0 items-center w-full">
         <p className="text-4xl font-bold inline border-b-4 border-pink-600">
           About Me
@@ -137,9 +137,9 @@ const About = () => {
             </li>
           </ul>
           <div>
-            <Link to="/about">
-              <button className="text-white z-20 px-6 py-3 my-2 flex items-center ease-in duration-300">
-                View More About Me
+            <Link to="/skills" className="absolute">
+              <button className="text-white px-6 py-3 my-2 flex items-center ease-in duration-300">
+                Checkout my Skills
                 <span className="duration-300">
                   <HiArrowNarrowRight className="ml-3 " />
                 </span>

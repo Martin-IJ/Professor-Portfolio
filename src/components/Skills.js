@@ -9,10 +9,12 @@ import Tailwind from '../assets/tailwind.png';
 import Bootstrap from '../assets/Bootstrap_logo.svg.png'
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import Img from '../assets/IMG_4849.jpg'
 
 const Skills = () => {
   return (
-    <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
+    <div name='skills' className='skill-cont w-full h-screen text-gray-300'>
+      <img src={Img} alt="" className='skill-img' />
       {/* Container */}
       <div className='max-w-[1000px] mx-auto p-4 pt-36 text-center sm:text-left flex flex-col justify-center w-full'>
           <div>
